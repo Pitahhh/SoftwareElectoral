@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -111,8 +112,19 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="model\Candidato.cs" />
+    <Compile Include="model\Comuna.cs" />
+    <Compile Include="model\Genero.cs" />
+    <Compile Include="model\Partido.cs" />
+    <Compile Include="model\Perfil.cs" />
+    <Compile Include="model\Persona.cs" />
+    <Compile Include="model\Provincia.cs" />
+    <Compile Include="model\Region.cs" />
+    <Compile Include="model\Sector.cs" />
+    <Compile Include="model\Votacion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
